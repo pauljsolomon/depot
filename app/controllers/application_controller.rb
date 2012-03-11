@@ -1,7 +1,13 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
 
+  #before_filter :set_current_cart
+
   private
+
+    #def set_current_cart
+    #  @cart = current_cart
+    #end
 
     def current_cart
       Cart.find(session[:cart_id])
