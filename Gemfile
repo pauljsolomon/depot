@@ -7,6 +7,9 @@ gem 'rails', '3.1.0'
 
 gem 'sqlite3'
 
+#PJS: added, was not commented out, as described in book
+gem 'bcrypt-ruby', '~> 3.0.0'
+
 
 # Gems used only for assets and not required
 # in production environments by default.
