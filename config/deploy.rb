@@ -21,7 +21,9 @@ set :rvm_ruby_string, 'ruby-1.9.2-p318'
 set :rvm_type, :user
 
 # file paths
-set :repository,  "#{user}@#{domain}:git/#{application}.git" 
+# git@github.com:pauljsolomon/depot.git
+#set :repository,  "#{user}@#{domain}:git/#{application}.git" 
+set :repository,  "git@github.com:pauljsolomon/#{application}.git"
 set :deploy_to, "/home/#{user}/#{domain}" 
 
 # distribute your applications across servers (the instructions below put them
